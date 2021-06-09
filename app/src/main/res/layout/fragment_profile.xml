@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5ca1ff">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="28dp"
+                android:src="#64a6ff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.manasmalla.spellright.utils.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.434"
+                app:layout_constraintHeight_percent="0.734"
+                app:mProgress="40"
+                app:mProgressColor="#74fa7f"
+                app:mStrokeWidth="35" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintHeight_percent="0.45"
+                app:layout_constraintWidth_percent="0.42" />
+
+
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:id="@+id/circleView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="28dp"
+                app:layout_constraintBottom_toBottomOf="@+id/circleImageView"
+                app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                app:layout_constraintTop_toTopOf="@+id/circleImageView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="60dp"
+                        android:layout_marginBottom="24dp"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/profile_user_icon" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="@+id/constraintLayout12"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout12"
+                app:layout_constraintTop_toTopOf="@+id/circularProgressBar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#F6F9FA">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:text="1"
+                        android:textSize="32sp"
+                        android:includeFontPadding="false"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textColor="#79ce30"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/torqoise_shade"
+                android:elevation="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/circleImageView"
+                app:layout_constraintHeight_percent="0.19"
+                app:layout_constraintStart_toStartOf="@+id/circleImageView"
+                app:layout_constraintWidth_percent="0.38">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:includeFontPadding="false"
+                    android:text="Beginner"
+                    android:textColor="#FFF"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout10"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout10"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:includeFontPadding="false"
+                    android:text="1536"
+                    android:textColor="#ffff5a"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_stars" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

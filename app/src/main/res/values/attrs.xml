@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="mStrokeWidth" format="integer" />
+        <attr name="mProgress" format="integer" />
+        <attr name="mProgressColor" format="color"/>
+    </declare-styleable>
+</resources>

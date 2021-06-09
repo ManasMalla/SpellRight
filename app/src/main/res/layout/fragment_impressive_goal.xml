@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.ImpressiveGoalFragment">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView_impressive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6_impressive"
+        android:transitionName="simpleGoal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView_impressive"
+        app:layout_constraintHeight_percent="0.238"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView_impressive"
+        app:layout_constraintTop_toTopOf="@+id/materialCardView_impressive">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:includeFontPadding="false"
+            android:text="Simple"
+            android:textColor="#666666"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="5 min/day"
+            android:textColor="#33a1ff"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView2_impressive"
+        android:transitionName="goalCard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5_impressive">
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4_impressive"
+        android:transitionName="normalGoal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="6dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout6_impressive"
+        app:layout_constraintHeight_percent="0.238"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout6_impressive"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6_impressive">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:includeFontPadding="false"
+            android:text="Normal"
+            android:textColor="#666666"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="10 min/day"
+            android:textColor="#33a1ff"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout5_impressive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="6dp"
+        android:transitionName="hardGoal"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView_impressive"
+        app:layout_constraintHeight_percent="0.238"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView_impressive"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4_impressive">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:includeFontPadding="false"
+            android:text="Hard"
+            android:textColor="#666666"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="15 min/day"
+            android:textColor="#33a1ff"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/impressiveCard_impressive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:transitionName="ImpressiveGoal"
+        android:background="@drawable/button_background_blue_rounded_goal"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/materialCardView2_impressive"
+        app:layout_constraintEnd_toEndOf="@+id/materialCardView2_impressive"
+        app:layout_constraintStart_toStartOf="@+id/materialCardView2_impressive"
+        app:layout_constraintTop_toTopOf="@+id/materialCardView2_impressive">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:includeFontPadding="false"
+            android:text="Impressive"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/quicksand_medium"
+            android:text="20 min/day"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

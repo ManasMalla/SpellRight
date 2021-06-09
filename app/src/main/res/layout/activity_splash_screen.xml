@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/splash_screen_port" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toTopOf="@+id/gettingStartedLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/characters" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/gettingStartedLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.85">
+
+        <ImageView
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.49"
+            app:srcCompat="@drawable/login" />
+
+        <ImageView
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_percent="0.49"
+            app:srcCompat="@drawable/start" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateRoundCornerProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        app:rcMax="100"
+        app:rcBackgroundColor="#0A000000"
+        app:rcAnimationSpeedScale="4"
+        app:rcProgressColor="#fff16d"
+        app:layout_constraintBottom_toBottomOf="@id/gettingStartedLayout"
+        app:layout_constraintEnd_toEndOf="@id/gettingStartedLayout"
+        app:layout_constraintStart_toStartOf="@id/gettingStartedLayout"
+        app:layout_constraintTop_toTopOf="@+id/gettingStartedLayout" >
+
+    </com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateRoundCornerProgressBar>
+
+    <TextView
+        android:id="@+id/loadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="Loading...!"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/loadingProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/gettingStartedLayout"
+        app:layout_constraintStart_toStartOf="@+id/gettingStartedLayout"
+        app:layout_constraintTop_toTopOf="@+id/loadingProgressBar" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.18"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/toki" />
+</androidx.constraintlayout.widget.ConstraintLayout>

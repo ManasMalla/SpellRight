@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4faff"
+    tools:context=".onboarding.ChooseGoal">
+
+
+    <TextView
+        android:id="@+id/chooseTextView_slideFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="Choose"
+        android:textColor="#b4b4aa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/yourGoal_slideFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="YOUR GOAL"
+        android:textColor="#2490ff"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView_slideFour" />
+
+    <TextView
+        android:id="@+id/slideFourTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="4"
+        android:textColor="#e2f0ff"
+        android:textSize="160sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yourGoal_slideFour"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/completeButton_slideFour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/right_cornered_button_green"
+            android:fontFamily="@font/quicksand_bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="COMPLETE"
+            android:textSize="24sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.092"
+            app:layout_constraintWidth_percent="0.73" />
+
+        <ImageView
+            android:id="@+id/chevron_left_slide4"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="48dp"
+            android:adjustViewBounds="true"
+            android:elevation="16dp"
+            app:layout_constraintHeight_percent="0.0266"
+            android:src="@drawable/ic_chevron_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/backButton_slideFour"
+            app:layout_constraintStart_toStartOf="@+id/backButton_slideFour"
+            app:layout_constraintTop_toTopOf="@+id/backButton_slideFour" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton_slideFour"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shadow_file"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="-5"
+            android:shadowRadius="2"
+            app:backgroundTint="@null"
+            app:elevation="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.092"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.212" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:alpha="0"
+            android:scaleType="fitStart"
+            android:src="@drawable/goal_help_decider"
+            app:layout_constraintBottom_toTopOf="@+id/completeButton_slideFour"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.98" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/goal_fragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yourGoal_slideFour" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

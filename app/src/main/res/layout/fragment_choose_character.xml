@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.ChooseCharacterFragment">
+
+    <TextView
+        android:id="@+id/chooseYour_slide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="Choose Your"
+        android:textColor="#b4b4aa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/characterTextView_slide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="CHARACTER"
+        android:textColor="#2490ff"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseYour_slide1" />
+
+    <TextView
+        android:id="@+id/slide1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="1"
+        android:textColor="#edf5ff"
+        android:textSize="160sp"
+        app:layout_constraintBottom_toBottomOf="@+id/characterTextView_slide1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton_slide1"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="NEXT"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="24sp"
+        android:background="@drawable/button_background_blue"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="0dp"
+        android:layout_margin="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_slide1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#f4faff"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton_slide1" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@drawable/grey_shadow"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout_slide1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/characterRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        android:paddingLeft="183dp"
+        android:paddingRight="183dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton_slide1"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

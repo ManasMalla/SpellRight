@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/circleView"
+        android:layout_width="140dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circular_shadow">
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFF">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:srcCompat="@drawable/ic_in_flag" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </io.github.florent37.shapeofview.shapes.CircleView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </io.github.florent37.shapeofview.shapes.CircleView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/circleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/picker_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="Hindi"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/circleView"
+        app:layout_constraintStart_toStartOf="@+id/circleView"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2" />
+
+
+    <io.github.florent37.shapeofview.shapes.CircleView
+        android:id="@+id/tickView_itemLanguage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="4dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circular_shadow_tick">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_check" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </io.github.florent37.shapeofview.shapes.CircleView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
