@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "166438653305",
+    "project_id": "spell-right",
+    "storage_bucket": "spell-right.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166438653305:android:41dca97d53b4388a1d73a8",
+        "android_client_info": {
+          "package_name": "com.manasmalla.spellright"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166438653305-593ucehrpos1gsm0hl14c28bekcrloq1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsBJa4Hqt-ZyWz--iVpXr75dM8j9F6j2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166438653305-593ucehrpos1gsm0hl14c28bekcrloq1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

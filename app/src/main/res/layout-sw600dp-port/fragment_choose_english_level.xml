@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.ChooseEnglishLevel">
+
+
+    <TextView
+        android:id="@+id/chooseTextView_slideThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="Choose Your"
+        android:textColor="#b4b4aa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/englishLevel_slideThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="ENGLISH LEVEL"
+        android:textColor="#2490ff"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView_slideThree" />
+
+    <TextView
+        android:id="@+id/slideThreeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:text="3"
+        android:textColor="#edf5ff"
+        android:textSize="160sp"
+        app:layout_constraintBottom_toBottomOf="@+id/englishLevel_slideThree"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#f4faff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.76">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@drawable/grey_shadow"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/nextButton_slideThree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/right_cornered_button_blue"
+            android:fontFamily="@font/quicksand_bold"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="NEXT"
+            android:textSize="24sp"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintWidth_percent="0.73" />
+
+        <ImageView
+            android:id="@+id/chevron_left_slide3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="48dp"
+            android:adjustViewBounds="true"
+            android:elevation="16dp"
+            android:src="@drawable/ic_chevron_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/backButton_slideThree"
+            app:layout_constraintHeight_percent="0.035"
+            app:layout_constraintStart_toStartOf="@+id/backButton_slideThree"
+            app:layout_constraintTop_toTopOf="@+id/backButton_slideThree" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButton_slideThree"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/shadow_file"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="-5"
+            android:shadowRadius="2"
+            app:backgroundTint="@null"
+            app:elevation="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHeight_percent="0.12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_percent="0.212" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/right_cornered_button_green_buttoned"
+        android:fontFamily="@font/quicksand_bold"
+        android:includeFontPadding="false"
+        android:insetTop="0dp"
+        android:insetBottom="10dp"
+        android:text="BEGIN THE TEST"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager_englishLevel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialButton" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/viewPager_englishLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/dotsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/indicatorLevelOne"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/button_background_blue" />
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/indicatorLevelTwo"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="#c0d7e8" />
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/indicatorLevelThree"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="#c0d7e8" />
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <io.github.florent37.shapeofview.shapes.CircleView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/indicatorLevelFour"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:background="#c0d7e8" />
+            </io.github.florent37.shapeofview.shapes.CircleView>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="If you don't know your level"
+        app:layout_constraintBottom_toTopOf="@+id/materialButton"
+        app:layout_constraintEnd_toEndOf="@+id/englishLevel_slideThree"
+        app:layout_constraintStart_toStartOf="@+id/englishLevel_slideThree"
+        app:layout_constraintTop_toBottomOf="@+id/englishLevel_slideThree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,19 +19,20 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:adjustViewBounds="true"
-        app:layout_constraintBottom_toTopOf="@+id/gettingStartedLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView12"
         app:srcCompat="@drawable/characters" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gettingStartedLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="32dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,14 +65,15 @@
         android:id="@+id/loadingProgressBar"
         android:layout_width="0dp"
         android:layout_height="30dp"
-        app:rcMax="100"
-        app:rcBackgroundColor="#0A000000"
-        app:rcAnimationSpeedScale="4"
-        app:rcProgressColor="#fff16d"
-        app:layout_constraintBottom_toBottomOf="@id/gettingStartedLayout"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
         app:layout_constraintEnd_toEndOf="@id/gettingStartedLayout"
         app:layout_constraintStart_toStartOf="@id/gettingStartedLayout"
-        app:layout_constraintTop_toTopOf="@+id/gettingStartedLayout" >
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:rcAnimationSpeedScale="4"
+        app:rcBackgroundColor="#0A000000"
+        app:rcMax="100"
+        app:rcProgressColor="#fff16d">
 
     </com.akexorcist.roundcornerprogressbar.indeterminate.IndeterminateRoundCornerProgressBar>
 
